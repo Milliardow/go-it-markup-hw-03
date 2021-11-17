@@ -54,6 +54,7 @@ padding-bottom: 94px;
 .main-nav {display: flex;
   align-items: center;
 }
+.header {border-bottom: solid 1px;}
 .container {
   width: 1200px;
   margin-left: auto;
@@ -62,6 +63,7 @@ padding-bottom: 94px;
   padding-right: 15px;
 }
 /*HEADER sections*/
+
 .nav {display: flex;
   align-items: center;
 }
