@@ -14,12 +14,28 @@ html {
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --command-backgroung-color: #f5f4fa;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h2 {
@@ -34,7 +50,7 @@ a {
   text-decoration: none;
 }
 ul {
-  list-style: none; 
+  list-style: none;
 }
 .section {padding-top:  94px;
 padding-bottom: 94px;
@@ -65,7 +81,6 @@ padding-bottom: 94px;
 /*HEADER sections*/
 
 .nav {display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -79,11 +94,6 @@ padding-bottom: 94px;
   color: var(--logo-first-color);
 }
 .logo-span {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--black-logo-color);
 }
 .nav-list {display: flex;
@@ -137,6 +147,9 @@ padding-bottom: 94px;
 .hero-section {
   background-color: var(--footer-backgroung-color);
    text-align: center;
+  padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-title {
   margin-top: 0px;
