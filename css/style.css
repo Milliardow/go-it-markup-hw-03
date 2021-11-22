@@ -202,13 +202,12 @@ ul {
   margin: 0px;
 }
 .reasons-list {
-  display: inline-block;
   display: flex;
   margin-top: 94px;
   padding: 0px;
 }
 .reasons-item {
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -217,7 +216,6 @@ ul {
   color: var(--black-logo-color);
 }
 .reasons-text {
-  display: inline-block;
   width: 270px;
   height: 75px;
   margin-top: 10px;
@@ -263,6 +261,7 @@ ul {
   margin-right: 30px;
 }
 .command-item {
+  text-align: center;
   width: 270px;
 }
 .command-name {
