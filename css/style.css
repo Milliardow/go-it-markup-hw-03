@@ -212,7 +212,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--black-logo-color);
 }
 .reasons-text {
@@ -250,6 +249,14 @@ ul {
 }
 .command {
 }
+.about-div {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.container-about {
+  text-align: center;
+}
 .command-title {
   margin-bottom: 50px;
 }
@@ -261,7 +268,6 @@ ul {
   margin-right: 30px;
 }
 .command-item {
-  text-align: center;
   width: 270px;
 }
 .command-name {
@@ -274,6 +280,7 @@ ul {
   color: var(--black-logo-color);
 }
 .command-prof {
+  padding-bottom: 30px;
   margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
@@ -313,6 +320,8 @@ ul {
 .work-button:hover {
   color: var(--logo-white-color);
   background-color: var(--logo-first-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button {
   border-radius: 4px;
