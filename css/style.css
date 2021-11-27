@@ -50,6 +50,7 @@ a {
   text-decoration: none;
 }
 ul {
+  padding: 0px;
   list-style: none;
 }
 .section {
@@ -103,6 +104,7 @@ ul {
   color: var(--black-logo-color);
 }
 .nav-list {
+  margin-left: 93px;
   display: flex;
 }
 
@@ -129,6 +131,21 @@ ul {
 .nav-link:hover {
   color: var(--button-primary-color);
 }
+.mail::before {
+  height: 16px;
+  display: block;
+  content: "";
+  background-image: url(../svg/mail.svg);
+  background-repeat: no-repeat;
+}
+.phone::before {
+  height: 16px;
+  display: block;
+  content: "";
+  background-image: url(../svg/phone.svg);
+  background-repeat: no-repeat;
+}
+
 .current {
   background-color: var(--logo-white-color);
   color: var(--button-primary-color);
@@ -138,8 +155,7 @@ ul {
   margin: 0px;
   margin-left: auto;
 }
-.nav-contact-item {
-}
+
 .nav-contact .nav-contact-item + .nav-contact-item {
   margin-left: 50px;
 }
@@ -242,6 +258,32 @@ ul {
 .reasons-item:not(:last-child) {
   margin-right: 30px;
 }
+.for-image {
+  display: block;
+  height: 120px;
+  background-color: var(--command-backgroung-color);
+  margin-bottom: 30px;
+}
+.antena {
+  background-image: url(../svg/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clock {
+  background-image: url(../svg/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.diagrama {
+  background-image: url(../svg/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cosmonavt {
+  background-image: url(../svg/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /*Specific sections*/
 .specific {
@@ -278,12 +320,6 @@ ul {
   display: flex;
   padding: 0px;
 }
-.command-list :not(:last-child) {
-  margin-right: 30px;
-}
-.command-item {
-  width: 270px;
-}
 .command-name {
   margin-top: 30px;
   font-weight: 500;
@@ -293,6 +329,17 @@ ul {
   letter-spacing: 0.03em;
   color: var(--black-logo-color);
 }
+
+.command-list :not(:last-child) {
+  margin-right: 30px;
+}
+.command-name.margin {
+  margin-right: 0px;
+}
+.command-item {
+  width: 270px;
+}
+
 .command-prof {
   padding-bottom: 30px;
   margin-top: 10px;
