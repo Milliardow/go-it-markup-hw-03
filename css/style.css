@@ -126,6 +126,10 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--black-logo-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:focus,
 .nav-link:hover {
@@ -138,20 +142,28 @@ ul {
 }
 .nav-contact {
   display: flex;
-  margin: 0px;
   margin-left: auto;
 }
-
+.nav-contact-item {
+}
 .nav-contact .nav-contact-item + .nav-contact-item {
   margin-left: 50px;
 }
 
 .nav-contact-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-grey-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-contact-link:focus,
 .nav-contact-link:hover {
@@ -176,7 +188,7 @@ ul {
     ),
     url(../image/hero.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .hero-title {
   margin-top: 0px;
@@ -245,7 +257,9 @@ ul {
   margin-right: 30px;
 }
 .for-image {
-  display: block;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: var(--command-backgroung-color);
@@ -303,6 +317,9 @@ ul {
   display: flex;
   padding: 0px;
 }
+.command-social {
+  display: flex;
+}
 .command-name {
   margin-top: 30px;
   font-weight: 500;
@@ -322,7 +339,26 @@ ul {
 .command-item {
   width: 270px;
 }
-
+.command-list-item {
+  width: 44px;
+  height: 44px;
+}
+.command-list-item:not(last-child) {
+  margin-right: 10px;
+}
+.command-link {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+.svg-command {
+  fill: currentColor;
+}
 .command-prof {
   padding-bottom: 30px;
   margin-top: 10px;
@@ -364,8 +400,8 @@ ul {
 .work-button:hover {
   color: var(--logo-white-color);
   background-color: var(--logo-first-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(121, 77, 77, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button {
   border-radius: 4px;
@@ -447,18 +483,10 @@ ul {
   color: var(--button-primary-color);
 }
 
-.mail {
-  width: 16px;
-  height: 12px;
+.nav-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
-
-.phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-}
-
 .antena {
   width: 65.32px;
   height: 70px;
