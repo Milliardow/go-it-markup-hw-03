@@ -131,20 +131,6 @@ ul {
 .nav-link:hover {
   color: var(--button-primary-color);
 }
-.mail::before {
-  height: 16px;
-  display: block;
-  content: "";
-  background-image: url(../svg/mail.svg);
-  background-repeat: no-repeat;
-}
-.phone::before {
-  height: 16px;
-  display: block;
-  content: "";
-  background-image: url(../svg/phone.svg);
-  background-repeat: no-repeat;
-}
 
 .current {
   background-color: var(--logo-white-color);
@@ -260,15 +246,12 @@ ul {
 }
 .for-image {
   display: block;
+  width: 270px;
   height: 120px;
   background-color: var(--command-backgroung-color);
   margin-bottom: 30px;
 }
-.antena {
-  background-image: url(../svg/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .clock {
   background-image: url(../svg/clock.svg);
   background-repeat: no-repeat;
@@ -462,4 +445,21 @@ ul {
 .adress-link:hover,
 .adress-link:focus {
   color: var(--button-primary-color);
+}
+
+.mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.antena {
+  width: 65.32px;
+  height: 70px;
 }
